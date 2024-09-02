@@ -1,0 +1,218 @@
+/* General styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(to right, #4f0337, #080005);
+  color: #fff;
+  padding: 1rem 2rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header h1 {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+  color: rgb(232, 0, 0, 1);
+}
+
+section p {
+  font-size: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(to right, #4f0337, #080005);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: pink;
+}
+
+button:active {
+  background-color: rgb(232, 0, 0, 1);
+  transform: scale(0.98);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #4f0337, #080005);
+  color: #fff;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.status {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive image sizing */
+section img {
+  width: 30%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  section img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  nav ul li {
+    margin: 0 0.75rem;
+  }
+
+  button {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section img {
+    max-width: 100%;
+  }
+
+  nav ul li {
+    margin: 0 0.5rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  button {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+  }
+}
+
+/* General styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Adjust the space between sections as needed */
+  justify-content: center; /* Centers content in container */
+}
+
+section {
+  flex: 1 1 calc(33.333% - 2rem); /* Adjust percentage for the number of columns and space between them */
+  min-width: 300px; /* Ensures sections don’t get too small */
+}
+
+/* Responsive Layout */
+@media (max-width: 980px) {
+  .container {
+    flex-direction: column;
+  }
+
+  section {
+    flex: 1 1 100%; /* Sections take full width on small screens */
+  }
+}
+
+#gestureButton {
+  margin-top: 70px;
+}
+#wearableButton{
+  margin-top: 130px;
+}

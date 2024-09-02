@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WINGS</title>
+    <link rel="icon" href="logo.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="gesture.html">Gesture Recognition</a></li>
+          <li><a href="panic-button.html">Panic Button</a></li>
+          <li><a href="safe-route.html">Safe Route Planning</a></li>
+          <li><a href="#wearable-integration">Wearable Integration</a></li>
+          <li><a href="#online-counselling">online-counselling</a></li>
+        </ul>
+      </nav>
+      <h1>WINGS(Women’s INstant Guardian System)</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <section id="gesture-recognition">
+          <h2>Gesture Recognition</h2>
+          <img src="gesture-recognition.jpg" alt="Gesture Recognition" />
+          <p>Use advanced computer vision to recognize specific gestures.</p>
+          <p>
+            Employs computer vision techniques to recognize and interpret
+            specific user gestures or movements, enhancing the app’s
+            interactivity and functionality.
+          </p>
+          <button id="gestureButton">Start Gesture Recognition</button>
+          <div id="gestureStatus" class="status"></div>
+        </section>
+
+        <section id="panic-button">
+          <h2>Panic Button</h2>
+          <img src="panic-button.jpg" alt="Panic Button" />
+          <p>
+            Quickly alert emergency contacts and services with video recording.
+          </p>
+          <p>
+            Features a quick-access button that triggers emergency alerts and
+            notifications to pre-selected contacts and emergency services.
+          </p>
+          <button id="panicButton">Activate Panic Mode</button>
+          <div id="alertMessage" class="status"></div>
+        </section>
+
+        <section id="safe-route">
+          <h2>Safe Route Planning</h2>
+          <img src="safe-route.jpg" alt="Safe Route Planning" />
+          <p>Get suggestions for the safest routes based on real-time data.</p>
+          <p>
+            Integrates mapping and navigation technologies to suggest the safest
+            routes for users based on real-time data and historical incident
+            information.
+          </p>
+          <button id="routeButton">Find Safe Route</button>
+          <div id="routeMessage" class="status"></div>
+        </section>
+
+        <section id="wearable-integration">
+          <h2>Wearable Device Integration</h2>
+          <img
+            src="wearable-integration.jpg"
+            alt="Wearable Integration"
+            height="250px"
+            width="640px"
+          />
+          <p>
+            Connect with wearables for additional safety features and
+            monitoring.
+          </p>
+          <p>
+            Syncs with wearables to provide additional safety features and
+            real-time monitoring.
+          </p>
+          <button id="wearableButton">Check Wearable Status</button>
+          <div id="wearableMessage" class="status"></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 WINGS. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panic Button</title>
+    <link rel="stylesheet" href="panic-button.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#panic">Panic Button</a></li>
+            </ul>
+        </nav>
+        <h1>Panic Button Demo</h1>
+    </header>
+
+    <main>
+        <section id="panic">
+            <h2>Emergency Panic Button</h2>
+            <p>Press the button below in case of an emergency. It will trigger an alert, start video recording, and send an emergency message.</p>
+            <button id="panicButton">Activate Panic Button</button>
+            <div id="videoContainer">
+                <video id="video" autoplay></video>
+            </div>
+            <div id="alertMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Panic Button App. All rights reserved.</p>
+    </footer>
+
+    <script src="panic-button.js"></script>
+</body>
+</html>
